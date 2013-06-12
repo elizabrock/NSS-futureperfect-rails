@@ -1,3 +1,5 @@
 Hello!
 
-<%= link_to "Log In", new_user_session_path %>
+<% unless current_user %>
+	<%= link_to "Log In", new_user_session_path %>
+<% end %>
