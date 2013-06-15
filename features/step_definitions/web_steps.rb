@@ -2,12 +2,16 @@ When(/^I go to the homepage$/) do
   visit "/"
 end
 
-When "I open the page" do
+When "show me the page" do
   save_and_open_page
 end
 
 When(/^I (?:click|press) "(.*?)"$/) do |text|
   click_link_or_button text
+end
+
+When(/^I fill in "(.*?)" with "(.*?)"$/) do |field_named, value|
+  fill_in field_named, with: value
 end
 
 When(/^I fill in "(.*?)" for "(.*?)"$/) do |value, field_named|
