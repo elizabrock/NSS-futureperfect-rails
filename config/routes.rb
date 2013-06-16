@@ -3,7 +3,7 @@ NSSFutureperfectRails::Application.routes.draw do
 
   root :to => "home#index"
 
-  resources :projects, only: [:index]
+  resources :projects, only: [:index, :create]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

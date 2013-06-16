@@ -1,6 +1,6 @@
 def path_to page
   case page
-  when "the homepage"
+  when /the home\s?page/
     root_path
   when "the projects page"
     projects_path
