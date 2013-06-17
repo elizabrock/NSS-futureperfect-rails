@@ -17,6 +17,26 @@ Project Status / TODO
 [![Coverage Status](https://coveralls.io/repos/elizabrock/NSS-futureperfect-rails/badge.png)](https://coveralls.io/r/elizabrock/NSS-futureperfect-rails)
 [![Code Climate](https://codeclimate.com/github/elizabrock/NSS-futureperfect-rails.png)](https://codeclimate.com/github/elizabrock/NSS-futureperfect-rails)
 
+Best practices to introduce:
+ * Haml / html2haml
+ * Form helpers
+ * Make your mockup in markup: http://24ways.org/2009/make-your-mockup-in-markup/
+ * Decent Exposure
+ * SSL
+ * Settings https://github.com/plataformatec/devise/wiki/How-To:-Allow-users-to-edit-their-account-without-providing-a-password
+
+
+Heroku Addons to cover:
+ * https://addons.heroku.com/scheduler
+ * https://addons.heroku.com/mandrill
+ * https://addons.heroku.com/postmark
+ * https://addons.heroku.com/newrelic
+ * https://addons.heroku.com/redistogo
+ * https://addons.heroku.com/honeybadger
+ * https://addons.heroku.com/ssl
+ * https://addons.heroku.com/deployhooks
+
+
 Features
 --------
 The main features of the futureperfect app will be that the tasks rotate until completed.  See the mockups for more details.
