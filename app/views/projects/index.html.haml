@@ -1,0 +1,11 @@
+%h1 Projects
+%ul
+  - @projects.each do |project|
+    %li= project.name
+  %li
+    = form_for @project do |f|
+      - @project.errors.full_messages.each do |message|
+        %p= message
+      = f.label :name, "Project Name"
+      = f.text_field :name
+      = f.submit "Add Project"
